@@ -1,8 +1,15 @@
 import React from 'react'
+import BasicEffect from './component/BasicEffect'
+import CounterEffect from './component/CounterEffect'
+import FetchDataEffect from './component/FetchDataEffect'
 
 const App = () => {
   return (
-    <div>App</div>
+    <div>
+    {/*<BasicEffect/>
+       <CounterEffect/> */}
+      <FetchDataEffect/>
+    </div>
   )
 }
 
