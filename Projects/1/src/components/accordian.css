@@ -1,0 +1,66 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background: rgb(36, 36, 36);
+    color: #fff;
+    font-family: sans-serif;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .container {
+    border: 2px solid white;
+    padding: 20px;
+    max-width: 40rem;
+    margin: 0 auto;
+  }
+  
+  .accordion-card {
+    margin: 20px 0;
+    padding: 20px;
+    background: rgb(73, 73, 73);
+    border-radius: 8px;
+    transition: background-color 0.3s;
+  }
+  
+  .accordion-card:hover {
+    background: rgb(85, 85, 85);
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    cursor: pointer;
+  }
+  
+  .icon {
+    font-size: 1.5rem;
+    padding: 5px;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  .icon:hover {
+    color: #ffa13a;
+  }
+  
+  .card-info {
+    width: 100%;
+    padding: 20px 0;
+    line-height: 1.5;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+  }
+  
+  .accordion-card.active .card-info {
+    max-height: 300px; /* Adjust based on content */
+  }
+  
